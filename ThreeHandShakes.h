@@ -21,13 +21,9 @@ public:
     void extend_matrix();
 
 private:
-    bool edgeExists(string name1, string name2);
-    //int matrix[SIZE][SIZE]; // матрица смежности
-    int** matrix; /*= new int* [SIZE];//  в таком виде не работало на другом компиляторе,
-     т.е. выделение памяти должно быть в конструкторе!!!*/
-    string* vertexes; /*= new string[SIZE]; */ // в таком виде не работало на другом компиляторе
-    //т.е. выделение памяти должно быть в конструкторе!!!
-    //string vertexes[SIZE];
+    bool edgeExists(string name1, string name2);    
+    int** matrix; /*= new int* [SIZE];
+    string* vertexes;    
     int vertexCount; // количество добавленных вершин 
     int extender = 1;//множитель SIZE
     int** SocNet;//матрица трех рукопожатий
