@@ -77,7 +77,7 @@ void Graph::addEdge(string name1, string name2)
         return;
     }
 
-    if (name1.size() && name1.size() && name1 != name2)
+    if (name1.size() && name2.size() && name1 != name2)
     {
         int v1 = getIndexbyName(name1);
         int v2 = getIndexbyName(name2);
